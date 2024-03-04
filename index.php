@@ -14,8 +14,8 @@ include 'XMLMerger.php';
 
         <?php
             $xmlMerger = new XMLMerger();
-            $xml = $xmlMerger->getDataFolder();
-            //$xml = $xmlMerger->setDataReverse($xml);
+            //$xml = $xmlMerger->getDataFolder();
+            $xml = $xmlMerger->setDataReverse();
             echo '<pre>';
             print_r($xml);
             echo '</pre>'
